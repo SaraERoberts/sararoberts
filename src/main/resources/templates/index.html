@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px|Dancing+Script|Pacifico" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px|Pacifico" >
 
   <style class="cp-pen-styles">
   
@@ -50,8 +50,8 @@
   }
   
   .w3-wide {
-    font-family: "Dancing Script", cursive;
-    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-size: 75px;
     /*letter-spacing: 10px;*/
   }
   .w3-hover-opacity {cursor: pointer;}
@@ -63,6 +63,10 @@
       }
   }
   
+  #about {
+    font-size: 1.0em;
+  }
+
   .heart-icon {
     color: rgb(243, 152, 157);
   }
@@ -104,7 +108,25 @@
   .fa-linkedin:hover {
     color: rgb(62, 186, 243);
   }
-  
+
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+    
   #profile { vertical-align: middle; }</style></head><body>
   <div class="w3-top">
     <ul class="w3-navbar" id="myNavbar">
@@ -140,7 +162,16 @@
   
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-section">
-        <p>I will be working on two .Net CORE projects with React front ends that will be added to this page soon.</p>
+        <h2>Technologies</h2>
+        <ul>
+          <li>.NET Core</li>
+          <li>Entity Framework</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>C, C++</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -159,40 +190,26 @@
   
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/300?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="grid-container">
+        <div class="item1">Project Coming Soon!</div>
+        <div class="item2"><img src="https://i.pinimg.com/originals/07/05/0e/07050ee09a8980a097700c7a702a645f.jpg" width="100px">></div>
+        <div class="item3">Project In Progress <br>
+                           Asp.Net Core, React</div>  
       </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/301?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="grid-container">
+        <div class="item1">SP18.PF.G07 Ticket Application</div>
+        <div class="item2"><img src="https://i.pinimg.com/236x/1a/23/ca/1a23ca73f33f1a06262bdced6d5d66cb--game-icon-icons.jpg" width="100px">></div>
+        <div class="item3"> CMPS 383 Information Systems, SELU 
+                            Asp.Net Core, React, Xamarin <br> 
+                            https://sp18-pf-g07.azurewebsites.net/</div>  
       </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="grid-container">
+        <div class="item1">The Rising Phoenix Referral Tracker</div>
+        <div class="item2"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c31b.png" width="100px">></div>
+        <div class="item3"><em>
+                            CMPS 285 Software Engineering, SELU
+                            Asp.Net Core, Angular 4</em></div>  
       </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/303?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-    </div>
-  
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/304?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/305?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/306?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-  
-      <div class="w3-col m3">
-        <img src="https://unsplash.it/400/307?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-    </div>
   </div>
   
   <!-- Modal for full size images on click-->
