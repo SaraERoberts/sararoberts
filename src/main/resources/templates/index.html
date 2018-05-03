@@ -108,25 +108,7 @@
   .fa-linkedin:hover {
     color: rgb(62, 186, 243);
   }
-
-  .item1 { grid-area: header; }
-  .item2 { grid-area: menu; }
-  .item3 { grid-area: main; }
-
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main main main';
-    grid-gap: 10px;
-    padding: 10px;
-  }
-
-  .grid-container > div {
-    padding: 20px 0;
-    font-size: 30px;
-  }
-    
+  
   #profile { vertical-align: middle; }</style></head><body>
   <div class="w3-top">
     <ul class="w3-navbar" id="myNavbar">
@@ -153,7 +135,7 @@
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h2 class="w3-center">About Me</h2>
-    <p>My name is Sara Roberts and I have a Bachelor's in both Biology and Computer Science. I love my cats and I enjoy drawing and watercoloring.  I hope to continue becoming a stronger programmer! </p>
+    <p>My name is Sara Roberts. I have recieved my Bachelor's in both Biology from Louisiana State University and Computer Science from Southeastern Louisiana University. I enjoy hanging out with my cats,  watching movies, and watercoloring.  I hope to continue becoming a stronger programmer! </p>
     <!--  Profile Picture and Description  -->
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-section">
@@ -169,8 +151,6 @@
           <li>React</li>
           <li>Node.js</li>
           <li>Java</li>
-          <li>JavaScript</li>
-          <li>C, C++</li>
         </ul>
       </div>
     </div>
@@ -190,25 +170,36 @@
   
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <div class="grid-container">
-        <div class="item1">Project Coming Soon!</div>
-        <div class="item2"><img src="https://i.pinimg.com/originals/07/05/0e/07050ee09a8980a097700c7a702a645f.jpg" width="100px">></div>
-        <div class="item3">Project In Progress <br>
-                           Asp.Net Core, React</div>  
+      <div class="w3-col m3">
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/2/23/ALBW_Triforce.png/300px-ALBW_Triforce.png?version=4288e4cf4795f4d590ee4afe79754fb0" style="width:25px">
       </div>
-      <div class="grid-container">
-        <div class="item1">SP18.PF.G07 Ticket Application</div>
-        <div class="item2"><img src="https://i.pinimg.com/236x/1a/23/ca/1a23ca73f33f1a06262bdced6d5d66cb--game-icon-icons.jpg" width="100px">></div>
-        <div class="item3"> CMPS 383 Information Systems, SELU 
-                            Asp.Net Core, React, Xamarin <br> 
-                            https://sp18-pf-g07.azurewebsites.net/</div>  
+  
+      <div class="w3-col m3">
+        <h2>Group07 Ticket Sales Application</h2>
+        <p>CMPS 383 Information Systems</p><br>
+        <a href="18-pf-g07.azurewebsites.net">Link</a>
       </div>
-      <div class="grid-container">
-        <div class="item1">The Rising Phoenix Referral Tracker</div>
-        <div class="item2"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c31b.png" width="100px">></div>
-        <div class="item3"><em>
-                            CMPS 285 Software Engineering, SELU
-                            Asp.Net Core, Angular 4</em></div>  
+  
+      <div class="w3-col m3">
+        <p>Asp.NET Core, Entity Framework, React, Xamarin</p>
+      </div>
+
+    </div>
+  
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="https://d1u5p3l4wpay3k.cloudfront.net/zelda_gamepedia_en/thumb/2/23/ALBW_Triforce.png/300px-ALBW_Triforce.png?version=4288e4cf4795f4d590ee4afe79754fb0" style="width:25px">
+        </div>
+    
+        <div class="w3-col m3">
+          <h2>The Rising Phoenix Referral Tracker</h2>
+          <p>CMPS 285 Software Engineering</p><br>
+        </div>
+    
+        <div class="w3-col m3">
+          <p>Asp.NET Core, Entity Framework, Angular 4</p>
+        </div>
+
       </div>
   </div>
   
