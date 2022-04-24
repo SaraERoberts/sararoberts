@@ -95,31 +95,30 @@
   <div class="w3-top">
     <ul class="w3-navbar" id="myNavbar">
       <li>
-          <a href="#" onclick="return false;"class="w3-padding-large">Sara Roberts</a>
+          <a href="#top" class="w3-padding-large">Sara Roberts</a>
       </li>
       <li class="w3-hide-small w3-right">
-        <a href="#resume" onclick="return false;" class="w3-padding-large">Resume</a>
+        <a href="#resume"  class="w3-padding-large">Resume</a>
       </li>
       <li class="w3-hide-small w3-right">
-        <a href="#portfolio" onclick="return false;"class="w3-padding-large">Portfolio</a>
+        <a href="#portfolio" class="w3-padding-large">Portfolio</a>
       </li>
       <li class="w3-hide-small w3-right">
-        <a href="#about" onclick="return false;"class="w3-padding-large">About</a>
+        <a href="#about" class="w3-padding-large">About</a>
       </li>
     </ul>
   </div>
 
 
   <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-opacity w3-display-container">
+  <div id="top" class="bgimg-1 w3-opacity w3-display-container">
     <div class="w3-display-middle" style="white-space:nowrap;">
       <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Sara Roberts</h1>
     </div>
   </div>
   
   <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64">
-      <a id="about"></a>
+  <div id="about" class="w3-content w3-container w3-padding-64">
     <h2 class="w3-center">About Me</h2>
     <br>
 
@@ -130,19 +129,36 @@
         <img src="https://preview.ibb.co/fBMwKS/of_Ren_SELU6_56.jpg" id="profile" class="w3-circle" alt="Photo of Me" width="300">
       </div>
 
-      <p>My name is Sara Roberts and I am interested in pursuing opportunities as a software developer.
-        I received my first Bachelor of Science from Louisiana State University and my second from
-        Southeastern Louisiana University in Computer Science. As a student, I gained experience
-        programming in Java, SQL, and JavaScript, and created a Web Application
-        in React/.NET as my capstone that’s currently used by the client. I have several years’ experience
-        as a manual QA Tester for EA Games as well as experience in SCRUM, Agile Development,
-        and Test-Driven Development.</p>
+      <p>
+        My name is Sara Roberts.  I'm currently a Business Consultant and Perficient serving as a Lead Program Manager for a 
+        Digital Media Software corporation, where I lead an onboarding program and drive engagements for enterprise-level customers 
+        (product migrations, deployments, troubleshooting, etc). Additional responsibilities include establishing annual KPIs, 
+        coaching a team, and reporting program metrics to client stakeholders. I am Scrum Master, Scrum Product Owner, and 
+        SAFe Agile certified and experienced in agile methodology, quality assurance and software development of 
+        web-based applications.  <br><br>
+        
+        I received my first Bachelor of Science from Louisiana State University and my second Bachelor’s from Southeastern 
+        Louisiana University in Computer Science.   As a student, I gained experience programming in Java, SQL, and JavaScript, 
+        and created several web applications in React/.NET. I also have several years’ experience as a manual QA Tester for 
+        EA Games.  I leverage my technical background in my current role as a Business Consultant and Perficient. <br><br>
+        
+        I consider myself a genuine, creative, and collaborative team member and at work, I value independence, transparency, and 
+        honesty.  I'm really passionate about solving complex problems alongside others and I am excited to grow my career 
+        in this direction.<br><br>
+        
+        I also mentor junior team members as a career guide, contribute as part of the Culture and Philanthropy pillar, 
+        write company blogs and sales memos, have won the Extra Mile award for several quarters, and many other extra 
+        curricular work activities.  I have two calico cats and I enjoy watercoloring, arts and crafts,
+        watching true crime, and karaoke.
+        </p>
   
       <!-- Hide this text on small devices -->
-      <div class="w3-col m6 w3-hide-small w3-section">
-        <h2>Technologies</h2>
-          <p>ASP.NET Core, Entity Framework, React, node.js </p>
-          <p>Java, JavaScript, C, C#, HTML/CSS </p>
+      
+        <h2 class="w3-center">Technologies and Certifications</h2>
+          <p class="w3-center">
+            Certified Scrum Master (CSM), Certified Scrum Product Owner (CSPO), SAFe Agilist (SA) <br>
+            Java, JavaScript, C, C#, HTML/CSS, ASP.NET Core, Entity Framework, React, node.js 
+          </p>
       </div>
     </div>
   </div>
@@ -155,8 +171,7 @@
   </div>
   
   <!-- Container (Portfolio Section) -->
-  <div class="w3-content w3-container w3-padding-64">
-      <a id="portfolio"></a>
+  <div id="portfolio"class="w3-content w3-container w3-padding-64">
     <h2 class="w3-center">Code Examples</h2>
     <p class="w3-center"><em>Below are examples of projects I have worked on most recently.</em></p><br>
     <div class="w3-row">
@@ -206,16 +221,16 @@
   </div>
   
   <!-- Container (Contact Section) -->
-  <div class="w3-content w3-container w3-padding-64">
-      <a id="resume"></a>
+  <div id="resume" class="w3-content w3-container w3-padding-64">
     <h1 class="w3-center">Sara Elizabeth Roberts</h1>
-    <p class="w3-center">100 Winchester Dr #704 Lafayette, LA 70506   |   <a href="mailto:s.sararoberts@gmail.com?Subject=From%20Website" target="_top">s.sararoberts@gmail.com</a>   |   (985) 869 - 3931</p>
+    <p class="w3-center">211 Blackwater River Dr. Lafayette, LA 70508   |   <a href="mailto:s.sararoberts@gmail.com?Subject=From%20Website" target="_top">s.sararoberts@gmail.com</a>   |   (985) 869 - 3931</p>
 
     <div class="w3-row">
 
       <div class="w3-col m6 w3-section">
         <h2>Education</h2>
-        <p> <strong>Southeastern Louisiana University</strong><br>
+        <p> 
+          <strong>Southeastern Louisiana University</strong><br>
             <em>Bachelor of Science: Computer Science <br>
               Cumulative GPA: 3.17, Degree GPA: 3.67</em><br>
             Hammond, LA. Graduated: December 2018<br>
@@ -224,8 +239,23 @@
             <em>Bachelor of Science: Animal Science</em><br>
             Baton Rouge, LA. Graduated December 2014</p><br>
 
-        <h2>Activities</h2>
+        <h2>Certifications</h2>
+        <p> 
+          Certified Scrum Master (CSM)<br>
+          Certified Scrum Product Owner (CSPO)<br>
+          SAFe Agilist (SA)<br>
+            
+        <h2>Involvements and Achievements</h2>
         <p>
+          <strong>Perficient, Inc.</strong><br>
+          <em>Lead PMO</em><br>
+          <em>Culture and Philanthropy Pillar</em><br>
+          <em>Sales Memo Committee</em><br>
+          <em>Career Guide</em><br>
+          <em>BrightPaths Mentor</em><br>
+          <em>Blog Lead</em><br>
+          <em>Extra Mile Winner (2019Q4, 2020Q2, and runner ups)</em><br>
+          <br>
           <strong>SELU’s ACM-W Chapter</strong><br>
           <em>Treasurer (2018)</em><br>
           <br>
@@ -243,12 +273,24 @@
       <div class="w3-col m6 w3-section">
         <h2>Experience</h2>
         <p>
-          <strong>Associate Technical Consultant</strong><br>
-          <em>Perficient; Jan 2019 - Present</em><br>
+          <strong>Business Consultant</strong><br>
+          <em>Perficient, Inc; Jan 2019 - Present</em><br>
+        <strong>Lead Program Manager at Adobe Inc.</strong>
         <ul>
-          <li><strong>Program Manager for a Multinational Multimedia Software Company</strong></li>
-          <li>Facilitate switch from serialized to named user system for major marketing consortia</li>
-          <li>Coordinate Python tool configuration to connect an Admin Console to an Active Directory</li>
+          <li>Educate 480+ customers via onboarding activities focused around software allocation and provisioning</li>
+          <li>Guide 50+ enterprise customers' IT through migration to new client products</li>
+          <li>Establish annual KPIs and designed dashboard to give client instant information on program metrics</li>
+          <li>Manage a team, train new teammates, and provide performance feedback/coaching</li>
+          <li>Configure Python sync tool connection between Admin Console API and Enterprise directory LDAP</li>
+          <li>Designated by client as Subject Matter Expert for client product </li>      
+          <li>Collaborate with CSM, AE, and SDM teams to provide product solutions to enterprise-level customers</li>
+          <li>Create and present client-facing documentation to improve onboarding processes and workflows</li>
+          <li>Assess customers’ functional and technical requirements and implement solutions. </li>       
+        </ul>
+        <strong>Scrum Master at Adobe Inc.</strong>
+        <ul>
+          <li>Led Scrum ceremonies for dev team to enhance tool that syncs Admin Console API to directory LDAP</li>
+          <li>Removed impediments and blockers for development team, solved team problems improved team velocity </li>  
         </ul>
         <br>
           <strong>Financial Aid Assistant</strong><br>
@@ -260,8 +302,10 @@
         <strong>Quality Assurance Tester</strong><br>
         <em>EA Games; Feb 2012 – Mar 2013, May 2014 – Sept 2014</em>
         <ul>
-          <li>Composed daily bug reports and maintained a title-wide database</li>
-          <li>Performed Unit, Ad Hoc, Regression, and Smoke Tests</li>
+          <li>Identified bugs in video game titles during alpha, beta, and production stages of development</li>
+          <li>Contributed in numerous agile / continuous development project life cycles</li>
+          <li>Composed bug reports and helped maintain a title-wide database</li>
+          <li>Performed manual Unit, Ad Hoc, Regression, and Smoke Test quality assurance tests</li>
         </ul>
         </p>
       </div>
@@ -281,7 +325,7 @@
         <i class="fa fa-linkedin fa-2x"></i>
       </a>
     </div>
-    <p class="w3-half"><span class="heart-icon">❤</span> Sara Roberts 2019</p>
+    <p class="w3-half"><span class="heart-icon">❤</span> Sara Roberts 2022</p>
   </footer>
   <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://maps.googleapis.com/maps/api/js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
   <script >// Smooth Scroll on anchor links
